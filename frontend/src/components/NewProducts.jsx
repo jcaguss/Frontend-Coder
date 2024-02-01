@@ -12,7 +12,7 @@ export const NewProducts = () => {
         const data = Object.fromEntries(dataForm)// Tranforma un Objeto Iterador a Objeto Simple
         const token = getCookiesByName('jwtCookie')
         console.log(token)
-        const response = await fetch('http://localhost:8080/api/products',{
+        const response = await fetch('https://backend-coderhouse-ifmf.onrender.com/api/products',{
             method:'POST',
             headers:{
                 'Authorization': `${token}`,
