@@ -10,7 +10,7 @@ export const Register = () => {
         const dataForm = new FormData(formRef.current) // Tranforma un html a un Objeto Iterador
         const data = Object.fromEntries(dataForm)// Tranforma un Objeto Iterador a Objeto Simple
         console.log(data)
-        const response = await fetch('https://backend-coderhouse-ifmf.onrender.com/api/sessions/register',{
+        const response = await fetch('https://backend-coderhouse-ifmf.onrender.com/api/session/register',{
             method:'POST',
             headers:{
                 'Content-type': 'application/json'    

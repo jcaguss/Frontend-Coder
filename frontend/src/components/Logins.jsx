@@ -10,7 +10,7 @@ export const Login = () => {
         e.preventDefault()
         const dataForm = new FormData(formRef.current) // Tranforma un html a un Objeto Iterador
         const data = Object.fromEntries(dataForm)// Tranforma un Objeto Iterador a Objeto Simple
-        const response = await fetch('https://backend-coderhouse-ifmf.onrender.com/api/sessions/login',{
+        const response = await fetch('https://backend-coderhouse-ifmf.onrender.com/api/session/login',{
             method:'POST',
             headers:{
                 'Content-type': 'application/json'    
